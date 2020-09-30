@@ -1,0 +1,16 @@
+{
+  "name": "code-folder-generator",
+  "version": "1.0.0",
+  "description": "Again, a simple project folder generator but made in Node.",
+  "main": "main.js",
+  "bin": {
+    "gen": "./main.js"
+  },
+  "keywords": [],
+  "author": "Nebula",
+  "license": "BSD-3",
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "prompts": "^2.3.2"
+  }
+}
