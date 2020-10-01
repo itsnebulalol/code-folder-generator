@@ -1,5 +1,5 @@
 {
-  "name": "code-folder-generator",
+  "name": "code-folder-generator-js",
   "version": "1.0.0",
   "description": "Again, a simple project folder generator but made in Node.",
   "main": "main.js",
@@ -12,5 +12,12 @@
   "dependencies": {
     "fs-extra": "^9.0.1",
     "prompts": "^2.3.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsnebulalol/code-folder-generator-js.git"
   }
 }
