@@ -13,9 +13,6 @@
     "fs-extra": "^9.0.1",
     "prompts": "^2.3.2"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/itsnebulalol/code-folder-generator-js.git"
