@@ -3,7 +3,7 @@ An actually decent project folder generator, but it's made in Node.
 
 ## Installation
 ```
-npm i -g @itsnebulalol/code-folder-generator-js@latest
+npm i -g code-folder-generator-js@latest
 gen
 ```
 
