@@ -1,5 +1,5 @@
 {
-  "name": "@itsnebulalol/code-folder-generator-js",
+  "name": "code-folder-generator-js",
   "version": "1.0.1",
   "description": "Again, a simple project folder generator but made in Node.",
   "main": "main.js",
@@ -10,8 +10,8 @@
   "author": "Nebula",
   "license": "BSD-3",
   "dependencies": {
-    "@jprichardson/fs-extra": "^9.0.1",
-    "@terkelg/prompts": "^2.3.2"
+    "fs-extra": "^9.0.1",
+    "prompts": "^2.3.2"
   },
   "repository": {
     "type": "git",
