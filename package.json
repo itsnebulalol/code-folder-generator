@@ -1,7 +1,7 @@
 {
-  "name": "code-folder-generator-js",
-  "version": "1.0.1",
-  "description": "Again, a simple project folder generator but made in Node.",
+  "name": "code-folder-generator",
+  "version": "1.0.0",
+  "description": "Simplify your life with Code Folder Generator. Automatically create a perfect environment based on pre-made templates.",
   "main": "main.js",
   "bin": {
     "gen": "./main.js"
@@ -15,6 +15,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/itsnebulalol/code-folder-generator-js.git"
+    "url": "https://github.com/itsnebulalol/code-folder-generator.git"
   }
 }
