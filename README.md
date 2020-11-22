@@ -1,9 +1,9 @@
-# Code Folder Generator (JS)
-An actually decent project folder generator, but it's made in Node.
+# Code Folder Generator 
+Simplify your life by automatically making a coding environment.
 
 ## Installation
 ```
-npm i -g code-folder-generator-js@latest
+npm i -g code-folder-generator@latest
 gen
 ```
 
