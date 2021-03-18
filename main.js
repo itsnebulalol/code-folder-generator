@@ -7,9 +7,9 @@ const fs = require("fs-extra");
 
     const templates = (await fs.readdir(`${process.mainModule.path}/templates`)).map((template) => {
         let info = require(`${process.mainModule.path}/templates/${template}/template.json`);
-        if (typeof info === "undefined") {
-            info = require(`${process.mainModule.path}/templates/${template}/package.json`);
-        }
+        
+        if (typeof info === "undefined") info = require(`${process.mainModule.path}/templates/${template}/package.json`);
+     
         info.dir = `${process.mainModule.path}/templates/${template}`;
         return info;
     });
@@ -43,9 +43,7 @@ const fs = require("fs-extra");
 
     response = await prompts(questions, { onCancel });
 
-    if (typeof response.template === "undefined") {
-        response.template = templates[0].dir;
-    }
+    if (typeof response.template === "undefined") response.template = templates[0].dir;
 
     if (await fs.exists(response.name)) {
         const overwrite = await prompts({
@@ -67,9 +65,7 @@ const fs = require("fs-extra");
 async function copyTemplate(name, template) {
     await fs.copy(template, name, {
         filter: (src, dest) => {
-            if (src.includes("template.json"))
-                return false;
-            return true;
+            if (!src.includes("template.json")) return true;
         }
     });
 }
